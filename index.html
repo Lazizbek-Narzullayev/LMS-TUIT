@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normaliza.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>TUIT LMS</title>
+</head>
+<body>
+    <div class="login">
+        <div class="login__item login__left">
+            <img src="../images/study.svg" alt="study" class="login__studyimg">
+        </div>
+        <div class="login__item login__right">
+            <div class="login__content">
+                <h1 class="login__title">MUHAMMAD AL-XORAZMIY NOMIDAGI
+                    TOSHKENT AXBOROT TEXNOLOGIYALARI
+                    UNIVERSITETI</h1>
+                    <img class="login__logo" src="../images/logo__tuit.png" alt="logo tuit">
+                    <h1 class="login__subtitle">LEARNING MANAGEMENT SYSTEM</h1>
+                    <form  method="POST">
+                        <div class="form">
+                            <div class="form__group text__left">
+                                <label class="login__label" for="login-pass">Login</label>
+                                <input  type="text" id="username" name="username" class="form__control login__input" placeholder="Loginni kiriting" required>
+                            </div>
+                            <div class="form__group text__left">
+                                <label class="login__label" for="login-check">Parol</label>
+                                <div class="input__group">
+                                    <input type="password" id="password" name="password" required class="form__control login__input last__input" placeholder="Parolni kiriting">
+                                    <span class="input__group__btn">
+                                            <i class="ri-eye-off-line login__eye first__btn" id="login-eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" onclick="checkLogin()" class="login__btn">Kirish</button>
+                    </form>
+                    <p id="errorMessage" class="error-message"></p>
+            </div>
+                <p class="login__text">
+                    Copyright &copy; 2021 of Tashkent University of Information Technologies</p>
+                <div class="recapt"><img src="../images/reCAPTCHA.png" alt="recaptcha" class="login__recaptcha"></div>
+        </div>
+        <script src="./css/script.js"></script>
+</body>
+</html>
